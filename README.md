@@ -1,2 +1,4 @@
-# Website Van Django
-Dit is de goeie!
+Welkom Op Mijn Website!
+
+
+Welcome To My Website!

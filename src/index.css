@@ -1,0 +1,153 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. */
+
+@layer base {
+  :root {
+    --background: 250 250 250;
+    --foreground: 10 10 10;
+
+    --card: 255 255 255;
+    --card-foreground: 10 10 10;
+
+    --popover: 255 255 255;
+    --popover-foreground: 10 10 10;
+
+    --primary: 10 10 10;
+    --primary-foreground: 250 250 250;
+
+    --secondary: 245 245 245;
+    --secondary-foreground: 10 10 10;
+
+    --muted: 245 245 245;
+    --muted-foreground: 115 115 115;
+
+    --accent: 245 245 245;
+    --accent-foreground: 10 10 10;
+
+    --destructive: 204 0 0;
+    --destructive-foreground: 250 250 250;
+
+    --border: 230 230 230;
+    --input: 230 230 230;
+    --ring: 10 10 10;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 248 248 248;
+    --sidebar-foreground: 26 26 26;
+    --sidebar-primary: 10 10 10;
+    --sidebar-primary-foreground: 248 248 248;
+    --sidebar-accent: 240 240 240;
+    --sidebar-accent-foreground: 10 10 10;
+    --sidebar-border: 230 230 230;
+    --sidebar-ring: 10 10 10;
+  }
+
+  .dark {
+    --background: 10 10 10;
+    --foreground: 250 250 250;
+
+    --card: 26 26 26;
+    --card-foreground: 250 250 250;
+
+    --popover: 26 26 26;
+    --popover-foreground: 250 250 250;
+
+    --primary: 250 250 250;
+    --primary-foreground: 10 10 10;
+
+    --secondary: 38 38 38;
+    --secondary-foreground: 250 250 250;
+
+    --muted: 38 38 38;
+    --muted-foreground: 163 163 163;
+
+    --accent: 38 38 38;
+    --accent-foreground: 250 250 250;
+
+    --destructive: 204 0 0;
+    --destructive-foreground: 250 250 250;
+
+    --border: 38 38 38;
+    --input: 38 38 38;
+    --ring: 250 250 250;
+
+    --sidebar-background: 10 10 10;
+    --sidebar-foreground: 248 248 248;
+    --sidebar-primary: 250 250 250;
+    --sidebar-primary-foreground: 10 10 10;
+    --sidebar-accent: 26 26 26;
+    --sidebar-accent-foreground: 250 250 250;
+    --sidebar-border: 38 38 38;
+    --sidebar-ring: 250 250 250;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-automotive-black text-foreground font-sans;
+    color: white;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer components {
+  .loading-dot {
+    animation-delay: var(--delay);
+  }
+  
+  .shimmer-bg {
+    background: linear-gradient(
+      90deg,
+      transparent 0%,
+      rgba(255, 255, 255, 0.1) 50%,
+      transparent 100%
+    );
+    background-size: 200% 100%;
+  }
+  
+  .glass-effect {
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  .automotive-gradient {
+    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 50%, #2a2a2a 100%);
+  }
+  
+  .text-gradient {
+    background: linear-gradient(135deg, #ffffff 0%, #c0c0c0 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  
+  .gold-gradient {
+    background: linear-gradient(135deg, #ebca14 0%, #ffd700 50%, #d4af37 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  
+  .login-button {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+  
+
+}
+
